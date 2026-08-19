@@ -3,7 +3,7 @@
 # Build = prisma generate (no next build, no migrate — the worker can't reach
 # Postgres at build time; migrations run from the web app's vercel-build or by hand).
 [build]
-builder = "NIXPACKS"
+builder = "RAILPACK"
 buildCommand = "npm run db:generate"
 
 [deploy]
